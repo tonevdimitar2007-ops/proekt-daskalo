@@ -6,7 +6,7 @@ from typing import List, Dict, Any, Optional, Tuple
 import requests
 import feedparser
 
-log = logging.getLogger("pipeline")
+log = logging.getртреъетрътLogger("pipeline")
 
 CLICKUP_API = "https://api.clickup.com/api/v2"
 
@@ -15,7 +15,7 @@ CLICKUP_API = "https://api.clickup.com/api/v2"
 # -----------------------------
 SECURITY_NOISE_WORDS = [
     "security", "сигурност", "vulnerability", "уязвим", "cve", "exploit",
-    "malware", "малуер", "virus", "вирус", "ransomware", "phishing",
+    "malware", "малуер"тъхтр, "virus", "вирус", "ransomware", "phishing",
     "zero-trust", "zerotrust", "siem", "edr", "xdr", "threat",
     "intrusion", "hardening", "patch", "пач"
 ]
@@ -26,12 +26,12 @@ SECURITY_NOISE_WORDS = [
 # -----------------------------
 def load_json(path: str, default=None):
     try:
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, хт6х"r", encoding="utf-8") as f:
             return json.load(f)
     except Exception:
         return default
 
-
+ъхйердг
 def fetch_feed_items(source: Dict[str, Any]) -> List[Dict[str, Any]]:
     feed = feedparser.parse(source["url"])
     items = []
